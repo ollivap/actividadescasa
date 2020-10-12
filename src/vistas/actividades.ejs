@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script language="JavaScript" src="/js/actividades.js"></script>
+  </head>
+  <body>
+        <div id="caja"><h1>Resumen de Actividades</h1></div>
+        <form class="" name="actividades" action="#" method="get">
+          <h1><%= title%></h1>
+          <table>
+              <tr>
+                <td class="coletiqueta"></td>
+                <td width="100px">Hombre</td>
+                <td width="100px">Mujer</td>
+              </tr>
+              <tr>
+                <td class="coletiqueta">Cocinar</td>
+                <td><input type="radio" id="coc1" name="cocinar" value="h"></td>
+                <td><input type="radio" id="coc2" name="cocinar" value="m"></td>
+              </tr>
+              <tr>
+                <td class="coletiqueta">Limpiar</td>
+                <td><input type="radio" id="lim1" name="limpiar" value="h"></td>
+                <td><input type="radio" id="lim2" name="limpiar" value="m"></td>
+              </tr>
+              <tr>
+                <td class="coletiqueta">Barrer</td>
+                <td><input type="radio" id="bar1" name="barrer" value="h"></td>
+                <td><input type="radio" id="bar2" name="barrer" value="m"></td>
+              </tr>
+              <tr>
+                <td class="coletiqueta">Lavar ropa</td>
+                <td><input type="radio" id="lavr1" name="lavarr" value="h"></td>
+                <td><input type="radio" id="lavr2" name="lavarr" value="m"></td>
+              </tr>
+              <tr>
+                <td class="coletiqueta">Lavar trastes</td>
+                <td><input type="radio" id="lavt1" name="lavart" value="h"></td>
+                <td><input type="radio" id="lavt2" name="lavart" value="m"></td>
+              </tr>
+          </table>
+          <div class="" id="divguardar">
+            <input type="button" name="enviar" value="Guardar y llenar otra encuesta" onclick="guardarencuesta();">
+          </div>
+          <div style="display:none" id="divactualizar">
+            <input type="hidden" name="encuesta">
+            <input type="button" name="enviar" value="Actualizar y llenar otra encuesta" onclick="reemplazaencuesta();">
+          </div>
+        </form>
+  </body>
+</html>
